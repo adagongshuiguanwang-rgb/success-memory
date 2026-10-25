@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "topics": {
+    "disk": {
+      "name": "磁盘",
+      "aliases": ["disk", "存储空间", "缓存清理"]
+    }
+  },
+  "experiences": [
+    {
+      "id": "DISK-001",
+      "topic": "disk",
+      "path": "memory/disk/DISK-001.md",
+      "scope": "Windows；pip/npm 默认 LocalAppData 缓存；清理过期可再生成缓存",
+      "summary": "预览固定路径，清理七天前文件，检查空间与缓存工具",
+      "status": "active",
+      "success_count": 1,
+      "failure_count": 0,
+      "events": [
+        {
+          "event_id": "disk-cleanup-20261026-001",
+          "result": "success",
+          "evidence": "examples/disk/result.json"
+        }
+      ]
+    }
+  ]
+}
