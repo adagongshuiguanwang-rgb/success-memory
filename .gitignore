@@ -1,0 +1,10 @@
+# Raw execution evidence and active task state stay local.
+private/
+**/private/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
