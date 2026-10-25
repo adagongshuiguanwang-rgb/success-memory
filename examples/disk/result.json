@@ -1,0 +1,25 @@
+{
+  "kind": "sanitized-local-observation",
+  "experience_id": "DISK-001",
+  "date": "2026-10-26",
+  "platform": "Windows",
+  "minimum_age_days": 7,
+  "deleted_files": 4572,
+  "deleted_logical_bytes": 4283364134,
+  "free_space_increase_bytes_during_operation": 4292976640,
+  "skipped_in_use_files": 2,
+  "deleted_files_verified_absent": 4572,
+  "checks": {
+    "npm_cache_verify": "passed-after-recheck",
+    "node_basic_command": "passed",
+    "npm_basic_command": "passed",
+    "pip_basic_command": "passed"
+  },
+  "evidence_access": "Aggregate values exported from local execution and verification records; original per-file manifest remains private.",
+  "limits": [
+    "One local execution; not a memory-system benchmark.",
+    "No full application runtime testing.",
+    "Disk allocation and concurrent writes can differ from deleted logical file sizes.",
+    "The aggregate summary alone does not allow independent verification of the historical execution."
+  ]
+}
